@@ -19,37 +19,32 @@ class BalanceViewController: UIViewController {
     
     // MARK: - Vars
     
-    private var amount = 0.0
+    private let account = Account()
     
     // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        amountLabel.text = "\(amount) €"
+        amountLabel.text = "\(account.balance) €"
     }
-    
     // MARK: - Withdraw
     
     @IBAction func didTapWithdraw(_ sender: Any) {
-        if let input = inputTextField.text {
-            if let number = Double(input) {
-                amount -= number
-            }
+        if let input = inputTextField.text, let number = Double(input) {
+            account.withdraw(number, date: Date())
         }
-        amountLabel.text = "\(amount) €"
+        amountLabel.text = "\(account.balance) €"
         inputTextField.text = ""
     }
     
     // MARK: - Deposit
     
     @IBAction func didTapDeposit(_ sender: Any) {
-        if let input = inputTextField.text {
-            if let number = Double(input) {
-                amount += number
-            }
+        if let input = inputTextField.text, let number = Double(input) {
+            account.deposit(number, date: Date())
         }
-        amountLabel.text = "\(amount) €"
+        amountLabel.text = "\(account.balance) €"
         inputTextField.text = ""
     }
     
@@ -64,10 +59,8 @@ class BalanceViewController: UIViewController {
     }
     
     private func makeStatementViewModels() -> [StatementViewModel] {
-        return [
-            StatementViewModel(date: "le 14/06/19 à 21:34:45", amount: "- 600 €", balance: "- 60 €"),
-            StatementViewModel(date: "le 13/06/19 à 07:00:00", amount: "+ 20 €", balance: "540 €"),
-            StatementViewModel(date: "le 12/06/19 à 15:54:55", amount: "+ 520 €", balance: "520 €")
-        ]
+        return account.statement().map {
+            StatementViewModel(line: $0)
+        }
     }
 }

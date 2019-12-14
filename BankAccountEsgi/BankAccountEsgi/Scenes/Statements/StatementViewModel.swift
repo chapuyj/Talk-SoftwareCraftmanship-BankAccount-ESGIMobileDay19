@@ -13,3 +13,11 @@ struct StatementViewModel {
     let amount: String
     let balance: String
 }
+
+extension StatementViewModel {
+    init(line: StatementLine) {
+        self.date = line.date.toDayTime()
+        self.amount = "\(line.amount) €"
+        self.balance = "\(line.balance) €"
+    }
+}

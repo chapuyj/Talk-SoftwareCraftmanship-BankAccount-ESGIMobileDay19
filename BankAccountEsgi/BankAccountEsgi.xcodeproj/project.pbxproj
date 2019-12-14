@@ -11,14 +11,17 @@
 		171575922392D4B000204BF0 /* StatementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171575912392D4B000204BF0 /* StatementsViewController.swift */; };
 		1744604F23940B99000FC8C1 /* StatementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744604E23940B99000FC8C1 /* StatementViewModel.swift */; };
 		177787672392F3CD003EE209 /* StatementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177787662392F3CD003EE209 /* StatementCell.swift */; };
-		179EFC5C23A52E0F006B69FF /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EFC5B23A52E0F006B69FF /* Date+Format.swift */; };
+		179EFC5723A51F15006B69FF /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EFC5623A51F15006B69FF /* Date+Format.swift */; };
+		179EFC5923A52165006B69FF /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EFC5823A52165006B69FF /* Operation.swift */; };
 		17B5862F2391C19B00572937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B5862E2391C19B00572937 /* AppDelegate.swift */; };
 		17B586312391C19B00572937 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B586302391C19B00572937 /* SceneDelegate.swift */; };
 		17B586332391C19B00572937 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B586322391C19B00572937 /* BalanceViewController.swift */; };
 		17B586362391C19B00572937 /* BalanceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B586342391C19B00572937 /* BalanceViewController.storyboard */; };
 		17B586382391C19C00572937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B586372391C19C00572937 /* Assets.xcassets */; };
 		17B5863B2391C19C00572937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B586392391C19C00572937 /* LaunchScreen.storyboard */; };
-		17B586462391C19C00572937 /* BankAccountEsgiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B586452391C19C00572937 /* BankAccountEsgiTests.swift */; };
+		17CE70D823A0F51E00CE781C /* AccountStatementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE70D723A0F51E00CE781C /* AccountStatementTests.swift */; };
+		17CE70DB23A0F69000CE781C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE70DA23A0F69000CE781C /* Account.swift */; };
+		17CE70DD23A0F90700CE781C /* StatementLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE70DC23A0F90700CE781C /* StatementLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,8 @@
 		171575912392D4B000204BF0 /* StatementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewController.swift; sourceTree = "<group>"; };
 		1744604E23940B99000FC8C1 /* StatementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementViewModel.swift; sourceTree = "<group>"; };
 		177787662392F3CD003EE209 /* StatementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementCell.swift; sourceTree = "<group>"; };
-		179EFC5B23A52E0F006B69FF /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		179EFC5623A51F15006B69FF /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		179EFC5823A52165006B69FF /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		17B5862B2391C19B00572937 /* BankAccountEsgi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAccountEsgi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5862E2391C19B00572937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B586302391C19B00572937 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +50,10 @@
 		17B5863A2391C19C00572937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17B5863C2391C19C00572937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17B586412391C19C00572937 /* BankAccountEsgiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAccountEsgiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17B586452391C19C00572937 /* BankAccountEsgiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountEsgiTests.swift; sourceTree = "<group>"; };
 		17B586472391C19C00572937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17CE70D723A0F51E00CE781C /* AccountStatementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatementTests.swift; sourceTree = "<group>"; };
+		17CE70DA23A0F69000CE781C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		17CE70DC23A0F90700CE781C /* StatementLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +74,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		179EFC5A23A52DF9006B69FF /* Utils */ = {
+		179EFC5523A51EF8006B69FF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				179EFC5B23A52E0F006B69FF /* Date+Format.swift */,
+				179EFC5623A51F15006B69FF /* Date+Format.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -98,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				17EECFD02392D27900935632 /* App */,
+				17CE70D923A0F67B00CE781C /* Domain */,
 				17EECFD12392D28800935632 /* Scenes */,
-				179EFC5A23A52DF9006B69FF /* Utils */,
+				179EFC5523A51EF8006B69FF /* Utils */,
 				17B586372391C19C00572937 /* Assets.xcassets */,
 				17B5863C2391C19C00572937 /* Info.plist */,
 			);
@@ -109,10 +116,20 @@
 		17B586442391C19C00572937 /* BankAccountEsgiTests */ = {
 			isa = PBXGroup;
 			children = (
-				17B586452391C19C00572937 /* BankAccountEsgiTests.swift */,
+				17CE70D723A0F51E00CE781C /* AccountStatementTests.swift */,
 				17B586472391C19C00572937 /* Info.plist */,
 			);
 			path = BankAccountEsgiTests;
+			sourceTree = "<group>";
+		};
+		17CE70D923A0F67B00CE781C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				17CE70DA23A0F69000CE781C /* Account.swift */,
+				179EFC5823A52165006B69FF /* Operation.swift */,
+				17CE70DC23A0F90700CE781C /* StatementLine.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		17EECFD02392D27900935632 /* App */ = {
@@ -265,12 +282,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1744604F23940B99000FC8C1 /* StatementViewModel.swift in Sources */,
+				179EFC5723A51F15006B69FF /* Date+Format.swift in Sources */,
 				171575922392D4B000204BF0 /* StatementsViewController.swift in Sources */,
-				179EFC5C23A52E0F006B69FF /* Date+Format.swift in Sources */,
+				179EFC5923A52165006B69FF /* Operation.swift in Sources */,
 				177787672392F3CD003EE209 /* StatementCell.swift in Sources */,
+				17CE70DD23A0F90700CE781C /* StatementLine.swift in Sources */,
 				17B586332391C19B00572937 /* BalanceViewController.swift in Sources */,
 				17B5862F2391C19B00572937 /* AppDelegate.swift in Sources */,
 				17B586312391C19B00572937 /* SceneDelegate.swift in Sources */,
+				17CE70DB23A0F69000CE781C /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B586462391C19C00572937 /* BankAccountEsgiTests.swift in Sources */,
+				17CE70D823A0F51E00CE781C /* AccountStatementTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
